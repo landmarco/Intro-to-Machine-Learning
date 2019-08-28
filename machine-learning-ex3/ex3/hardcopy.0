@@ -1,0 +1,49 @@
+  1 function [J, grad] = lrCostFunction(theta, X, y, lambda)
+  2 %LRCOSTFUNCTION Compute cost and gradient for logistic regression with
+  3 %regularization
+  4 %   J = LRCOSTFUNCTION(theta, X, y, lambda) computes the cost of using
+  5 %   theta as the parameter for regularized logistic regression and the
+  6 %   gradient of the cost w.r.t. to the parameters.
+  7
+  8 % Initialize some useful values
+  9 m = length(y); % number of training examples
+ 10
+ 11 % You need to return the following variables correctly
+ 12 J = 0;
+ 13 grad = zeros(size(theta));
+ 14
+ 15 % ====================== YOUR CODE HERE ======================
+ 16 % Instructions: Compute the cost of a particular choice of theta.
+ 17 %               You should set J to the cost.
+ 18 %               Compute the partial derivatives and set grad to the partial
+ 19 %               derivatives of the cost w.r.t. each parameter in theta
+ 20 %
+ 21 % Hint: The computation of the cost function and gradients can be
+ 22 %       efficiently vectorized. For example, consider the computation
+ 23 %
+ 24 %           sigmoid(X * theta)
+ 25 %
+ 26 %       Each row of the resulting matrix will contain the value of the
+ 27 %       prediction for that example. You can make use of this to vectorize
+ 28 %       the cost function and gradient computations.
+ 29 %
+ 30 % Hint: When computing the gradient of the regularized cost function,
+ 31 %       there're many possible vectorized solutions, but one solution
+ 32 %       looks like:
+ 33 %           grad = (unregularized gradient for logistic regression)
+ 34 %           temp = theta;
+ 35 %           temp(1) = 0;   % because we don't add anything for j = 0
+ 36 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
+ 37 %
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48 % =============================================================
+"~/Desktop/machine learning materials/machine-learning-ex3/ex3/lrCostFunction.m" 52L, 1698C                                                                                               39,0-1        Top
